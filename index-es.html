@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Anime</title>
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="spinner"></div>
+  </div>
+  
+  <div class="main-container">
+<div class="banner-container">
+  <img src="https://placehold.co/1200x200/ffd6e0/ff87b5?text=Portfolio+Anime+Banner" 
+       data-light-src="https://placehold.co/1200x200/ffd6e0/ff87b5?text=Portfolio+Anime+Banner" 
+       data-dark-src="https://placehold.co/1200x200/6d3d6d/c97aa6?text=Portfolio+Anime+Banner" 
+       alt="Banner ilustrado" class="banner">
+</div>
+    
+    <div class="content-wrapper">
+      <aside class="sidebar">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="portfolio">
+            <i class="fas fa-images"></i> <span class="tab-text">Portfolio</span>
+          </button>
+          <button class="tab-btn" data-tab="comissions">
+            <i class="fas fa-paint-brush"></i> <span class="tab-text">Comisiones</span>
+          </button>
+          <button class="tab-btn" data-tab="faq">
+            <i class="fas fa-question-circle"></i> <span class="tab-text">Preguntas Frecuentes</span>
+          </button>
+          <button class="tab-btn" data-tab="tos">
+            <i class="fas fa-file-alt"></i> <span class="tab-text">Términos y Condiciones</span>
+          </button>
+        </div>
+        
+        <div class="controls">
+        <button class="control-btn" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+           <span class="theme-text">Modo oscuro</span>
+        </button>
+          <button class="control-btn" id="language-toggle">
+            <i class="fas fa-language"></i>
+            <span class="language-text">Idioma: ES</span>
+          </button>
+        </div>
+      </aside>
+      
+      <main class="main-content">
+        <!-- Sección Portfolio (ahora es una pestaña como las demás) -->
+        <div id="portfolio-content" class="tab-content active">
+          <!-- Filtros -->
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todo</button>
+            <button class="filter-btn" data-filter="halfbody">Half Body</button>
+            <button class="filter-btn" data-filter="fullbody">Full Body</button>
+            <button class="filter-btn" data-filter="chibi">Chibi</button>
+            <button class="filter-btn" data-filter="oc">OC</button>
+          </div>
+          
+          <div class="gallery" id="gallery-container"></div>
+        </div>
+
+        <!-- Otras secciones/pestañas -->
+        
+<////////////////////////////// SECCION COMISIONES START //////////////////////////////>
+        
+<div id="comissions" class="tab-content">
+  <div class="info-section">
+    <h2><i class="fas fa-paint-brush"></i> Comisiones de Ilustración</h2>
+    <p>¡Acepto pedidos de ilustraciones personalizadas en estilo anime! Abajo encontrarás mis precios y opciones disponibles. Puedes ver más ejemplos de cada tipo en mi <a href="#portfolio-content" class="portfolio-link">sección de Portfolio</a>.</p>
+  </div>
+
+  <div class="info-section">
+    <h2><i class="fas fa-list-alt"></i> Tipos de Comisión</h2>
+    
+    <div class="comission-types">
+      <!-- Chibi -->
+      <div class="comission-card">
+        <div class="comission-header">
+          <h3>Chibi</h3>
+          <span class="price">$25 USD</span>
+        </div>
+        <div class="comission-gallery">
+          <div class="comission-image">
+            <img src="https://placehold.co/300x375/ffd6e0/ff87b5?text=Ejemplo+Chibi+1" alt="Ejemplo de ilustración Chibi" loading="lazy">
+          </div>
+          <div class="comission-image">
+            <img src="https://placehold.co/300x375/ffd6e0/ff87b5?text=Ejemplo+Chibi+2" alt="Ejemplo de ilustración Chibi" loading="lazy">
+          </div>
+        </div>
+        <div class="comission-features">
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Personaje en estilo kawaii</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Diseño simple pero expresivo</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Fondo color plano o transparente</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Tiempo estimado: 3-5 días</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Half Body -->
+      <div class="comission-card">
+        <div class="comission-header">
+          <h3>Half Body</h3>
+          <span class="price">$45 USD</span>
+        </div>
+        <div class="comission-gallery">
+          <div class="comission-image">
+            <img src="https://placehold.co/300x375/e2d1f9/9d7bd9?text=Ejemplo+Half+1" alt="Ejemplo de ilustración Half Body" loading="lazy">
+          </div>
+          <div class="comission-image">
+            <img src="https://placehold.co/300x375/e2d1f9/9d7bd9?text=Ejemplo+Half+2" alt="Ejemplo de ilustración Half Body" loading="lazy">
+          </div>
+        </div>
+        <div class="comission-features">
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Personaje hasta la cintura</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Mayor detalle en ropa y accesorios</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Fondo simple o transparente</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Tiempo estimado: 5-7 días</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Full Body -->
+      <div class="comission-card">
+        <div class="comission-header">
+          <h3>Full Body</h3>
+          <span class="price">$65 USD</span>
+        </div>
+        <div class="comission-gallery">
+          <div class="comission-image">
+            <img src="https://placehold.co/300x375/c4e3f6/6bb4e3?text=Ejemplo+Full+1" alt="Ejemplo de ilustración Full Body" loading="lazy">
+          </div>
+          <div class="comission-image">
+            <img src="https://placehold.co/300x375/c4e3f6/6bb4e3?text=Ejemplo+Full+2" alt="Ejemplo de ilustración Full Body" loading="lazy">
+          </div>
+        </div>
+        <div class="comission-features">
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Personaje completo con pose dinámica</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Máximo detalle en vestuario</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Fondo simple o transparente</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Tiempo estimado: 7-10 días</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Stickers -->
+      <div class="comission-card">
+        <div class="comission-header">
+          <h3>Stickers</h3>
+          <span class="price">$15 USD</span>
+        </div>
+        <div class="comission-gallery">
+          <div class="comission-image">
+            <img src="https://placehold.co/300x375/d4f4dd/5ac48d?text=Ejemplo+Sticker+1" alt="Ejemplo de Sticker" loading="lazy">
+          </div>
+          <div class="comission-image">
+            <img src="https://placehold.co/300x375/d4f4dd/5ac48d?text=Ejemplo+Sticker+2" alt="Ejemplo de Sticker" loading="lazy">
+          </div>
+        </div>
+        <div class="comission-features">
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Diseño de sticker en estilo anime</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Formato PNG con fondo transparente</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Archivo de alta calidad (300dpi)</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>Tiempo estimado: 2-3 días</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <h2><i class="fas fa-star"></i> Extras</h2>
+    <div class="extras-grid">
+      <div class="extra-item">
+        <i class="fas fa-user-plus"></i>
+        <h3>Personaje adicional</h3>
+        <p>+50% del precio base</p>
+      </div>
+      <div class="extra-item">
+        <i class="fas fa-image"></i>
+        <h3>Fondo detallado</h3>
+        <p>Desde +$20 USD</p>
+      </div>
+      <div class="extra-item">
+        <i class="fas fa-grin-tongue"></i>
+        <h3>Expresión adicional</h3>
+        <p>+$5 USD c/u</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <h2><i class="fas fa-shopping-cart"></i> Cómo encargar</h2>
+    <div class="order-steps">
+      <div class="order-step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Envíame tu idea</h3>
+          <p>Por Twitter, Instagram o Discord con los detalles de tu personaje y preferencias.</p>
+        </div>
+      </div>
+      <div class="order-step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Discutimos el proyecto</h3>
+          <p>Te enviaré un presupuesto exacto y plazo de entrega estimado.</p>
+        </div>
+      </div>
+      <div class="order-step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Aprobación del boceto</h3>
+          <p>Recibirás un boceto preliminar para revisión antes de continuar.</p>
+        </div>
+      </div>
+      <div class="order-step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Pago y entrega</h3>
+          <p>Realizarás el pago (50% adelantado) y recibirás tu ilustración final.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-section terms-notice">
+    <h2><i class="fas fa-file-contract"></i> Términos y Condiciones</h2>
+    <p>Para información detallada sobre políticas de pago, plazos de entrega y derechos de uso, por favor revisa mi sección completa de <a href="#tos" class="terms-link">Términos de Servicio</a>.</p>
+    <a href="#tos" class="terms-btn">
+      <i class="fas fa-scroll"></i> Ver Términos Completos
+    </a>
+  </div>
+</div>
+
+<////////////////////////////// SECCION COMISIONES FIN //////////////////////////////>
+
+<////////////////////////////// SECCION FAQs START //////////////////////////////>
+        
+<div id="faq" class="tab-content">
+  <div class="info-section">
+    <h2><i class="fas fa-question-circle"></i> Preguntas Frecuentes</h2>
+    <p>Aquí encontrarás respuestas a las dudas más comunes sobre mis comisiones y trabajo. Si no encuentras lo que buscas, no dudes en contactarme.</p>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-item">
+      <div class="faq-question">
+        <i class="fas fa-paint-brush"></i>
+        <h3>¿Qué tipos de comisiones aceptas?</h3>
+      </div>
+      <div class="faq-answer">
+        <p>Acepto comisiones de personajes originales (OC), fanarts, retratos, ilustraciones para redes sociales, emotes y más. No acepto contenido NSFW, furros complejos o mechas.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <i class="fas fa-money-bill-wave"></i>
+        <h3>¿Qué métodos de pago aceptas?</h3>
+      </div>
+      <div class="faq-answer">
+        <p>Acepto PayPal (principalmente) y Ko-fi. Para comisiones el pago es 50% adelantado y 50% al finalizar. Para pedidos menores a $20 USD, el pago es completo por adelantado.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <i class="fas fa-clock"></i>
+        <h3>¿Cuánto tiempo toma completar una comisión?</h3>
+      </div>
+      <div class="faq-answer">
+        <p>El tiempo varía según la complejidad:
+          <ul class="faq-list">
+            <li>Chibis y emotes: 3-5 días</li>
+            <li>Ilustraciones simples: 1-2 semanas</li>
+            <li>Ilustraciones complejas: 2-3 semanas</li>
+          </ul>
+          Los tiempos pueden extenderse si tengo muchos pedidos en cola.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <i class="fas fa-undo"></i>
+        <h3>¿Hacen revisiones o cambios?</h3>
+      </div>
+      <div class="faq-answer">
+        <p>Sí, permito hasta 3 revisiones menores durante el proceso (boceto, línea base y color base). Cambios mayores después de aprobadas estas etapas pueden tener costo adicional.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <i class="fas fa-file-download"></i>
+        <h3>¿Qué formato recibiré mi comisión?</h3>
+      </div>
+      <div class="faq-answer">
+        <p>Entregaré tu comisión en formato PNG de alta calidad (300dpi). Si necesitas otro formato (JPG, PDF, etc.) puedes solicitarlo sin costo adicional.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <i class="fas fa-share-alt"></i>
+        <h3>¿Puedo compartir la ilustración en redes?</h3>
+      </div>
+      <div class="faq-answer">
+        <p>¡Claro! Solo te pido que me menciones como artista (@mugimew) y no elimines mi firma. Si es para uso comercial (merch, logos, etc.) necesitarás una licencia extendida.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <i class="fas fa-calendar-times"></i>
+        <h3>¿Qué pasa si necesito cancelar mi pedido?</h3>
+      </div>
+      <div class="faq-answer">
+        <p>Si cancelas durante el boceto, te reembolsaré el 50% del adelanto. Después de aprobado el boceto, no hay reembolsos pero puedes conservar el trabajo realizado hasta ese punto.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <i class="fas fa-user-edit"></i>
+        <h3>¿Puedo pedir modificaciones después de recibir la comisión?</h3>
+      </div>
+      <div class="faq-answer">
+        <p>Pequeños ajustes (como corrección de colores menores) son gratis hasta 1 semana después de entregada. Modificaciones mayores tendrán un costo adicional dependiendo del trabajo requerido.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-section contact-notice">
+    <h2><i class="fas fa-envelope"></i> ¿Tienes otra pregunta?</h2>
+    <p>No dudes en contactarme por Twitter o Discord. Intento responder dentro de 24-48 horas.</p>
+    <div class="contact-buttons">
+      <a href="https://twitter.com/mugimew" class="contact-btn" target="_blank">
+        <i class="fab fa-twitter"></i> Twitter DM
+      </a>
+      <a href="#" class="contact-btn discord-btn">
+        <i class="fab fa-discord"></i> mugimew#1234
+      </a>
+    </div>
+  </div>
+</div>
+        
+<!--------------------------- SECCION FAQs FIN ---------------------------!>
+
+<!--------------------------- SECCION TERMINOS Y CONDICIONES START ---------------------------!>
+
+<div id="tos" class="tab-content">
+  <div class="info-section">
+    <h2><i class="fas fa-file-contract"></i> Términos de Servicio</h2>
+    <p>Al solicitar una comisión, aceptas automáticamente estos términos. Por favor, léelos cuidadosamente.</p>
+  </div>
+
+  <div class="info-section">
+    <h2><i class="fas fa-exclamation-circle"></i> Condiciones Generales</h2>
+    <div class="feature-item" style="padding: 0.3rem 0;">
+      <i class="fas fa-ban"></i>
+      <span><strong>No se realizan trabajos furry/mecha/gore.</strong> Sin excepción. Para más información sobre los trabajos que realizo, visitar la sección "Comisiones".</span>
+    </div>
+    <div class="feature-item" style="padding: 0.3rem 0;">
+      <i class="fas fa-eye"></i>
+      <span>En caso de NSFW, sólo se realiza NSFW Soft (Suave). En caso de dudas, se puede consultar.</span>
+    </div>
+    <div class="feature-item" style="padding: 0.3rem 0;">
+      <i class="fas fa-hand-paper"></i>
+      <span>Mugi se reserva el derecho de rechazar cualquier propuesta, sin la obligación de justificar dicha decisión.</span>
+    </div>
+    <div class="feature-item" style="padding: 0.3rem 0;">
+      <i class="fas fa-image"></i>
+      <span>La comisión se enviará con fondo blanco o transparente.</span>
+    </div>
+    <div class="feature-item" style="padding: 0.3rem 0;">
+      <i class="fas fa-store-slash"></i>
+      <span>La comisión es sólo para uso personal o sin fines de lucro. Está prohibida su comercialización.</span>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <h2><i class="fas fa-money-bill-wave"></i> Pago y Entrega</h2>
+    <div class="feature-item" style="padding: 0.3rem 0;">
+      <i class="fas fa-wallet"></i>
+      <span><strong>Métodos de pago:</strong> MercadoPago para Argentina y PayPal para el resto del mundo.</span>
+    </div>
+    <div class="feature-item" style="padding: 0.3rem 0;">
+      <i class="fas fa-percentage"></i>
+      <span>Se debe abonar el 50% del valor total para comenzar el trabajo.</span>
+    </div>
+    <div class="feature-item" style="padding: 0.3rem 0;">
+      <i class="fas fa-clock"></i>
+      <span>Plazo de entrega aproximado: 10 días desde el pago inicial (coordinado con el cliente ♡).</span>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <h2><i class="fas fa-project-diagram"></i> Flujo de Trabajo</h2>
+    <div class="order-steps">
+      <div class="order-step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Concepto</h3>
+          <p>Acuerdo sobre pose, rasgos, pelo, ropa, accesorios y colores. El cliente debe proporcionar referencias detalladas. Se define la relación de aspecto (1:1 o 4:5).</p>
+        </div>
+      </div>
+      <div class="order-step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Boceto</h3>
+          <p>Mugi presenta el boceto para aprobación. Una vez aprobado, no se pueden modificar los elementos acordados en la etapa de Concepto.</p>
+        </div>
+      </div>
+      <div class="order-step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Lineart</h3>
+          <p>Mugi envía el lineart para aprobación. Una vez aprobado, no se permiten correcciones en el trazado.</p>
+        </div>
+      </div>
+      <div class="order-step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Pintura</h3>
+          <p>Se realiza el pintado según lo acordado. El cliente debe confirmar si está correcto o necesita correcciones. Una vez aprobado, no se permiten más cambios.</p>
+        </div>
+      </div>
+      <div class="order-step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <h3>Entrega</h3>
+          <p>Se paga el 50% restante. El cliente proporciona un email para recibir el trabajo final sin marca de agua en alta definición, con la relación de aspecto acordada.</p>
+        </div>
+      </div>
+    </div>
+    <div class="feature-item" style="margin: 1.5rem 0 0.2rem; padding: 1rem 0;">
+      <i class="fas fa-water"></i>
+      <span>Todas las imágenes pendientes de aprobación tendrán marca de agua. Solo se envía sin marca de agua en la etapa final.</span>
+    </div>
+    <div class="feature-item" style="padding: 0.2rem 0;">
+      <i class="fas fa-exclamation-triangle"></i>
+      <span>Si al resultado final le falta algo que el Cliente no haya indicado a su debido tiempo, no se harán devoluciones.</span>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <h2><i class="fas fa-undo"></i> Reembolsos</h2>
+    <div class="feature-item" style="padding: 0.3rem 0;">
+      <i class="fas fa-check-circle" style="font-size: 1.2rem;"></i>
+      <span style="margin-left: 1rem;">Sólo se podrá solicitar reembolso si el Cliente muestra disconformidad en la etapa de "Boceto" y cancela la comisión.</span>
+    </div>
+    <div class="feature-item" style="padding: 0.3rem 0;">
+      <i class="fas fa-times-circle" style="font-size: 1.2rem;"></i>
+      <span style="margin-left: 1rem;">Si el Cliente aprueba el boceto y continúa con el proyecto, no habrá devoluciones.</span>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <h2><i class="fas fa-gavel"></i> Derechos de la Ilustración</h2>
+    
+    <div style="display: flex; flex-direction: column; gap: 0rem;">
+      <!-- Ítem 1 -->
+      <div class="feature-item" style="padding: 1rem 0; border-bottom: 1px solid var(--separator-color);">
+        <i class="fas fa-store-slash" style="font-size: 1.2rem; margin-right: 1rem;"></i>
+        <div>
+          <h3 style="margin: 0 0 0.5rem 0; color: var(--dark-pink); font-size: 1.1rem;">Uso Comercial</h3>
+          <p style="margin: 0; line-height: 1.6;">El Cliente no tiene derecho comercial sobre el trabajo realizado. Esto significa que no podrá hacer reventa del mismo de ninguna forma (impresiones, merchandising, NFTs, etc.).</p>
+        </div>
+      </div>
+      
+      <!-- Ítem 2 -->
+      <div class="feature-item" style="padding: 1rem 0; border-bottom: 1px solid var(--separator-color);">
+        <i class="fas fa-share-alt" style="font-size: 1.2rem; margin-right: 1rem;"></i>
+        <div>
+          <h3 style="margin: 0 0 0.5rem 0; color: var(--dark-pink); font-size: 1.1rem;">Publicación en Redes</h3>
+          <p style="margin: 0; line-height: 1.6;">El Cliente tiene derecho a publicar el trabajo en redes sociales y plataformas digitales, siempre y cuando incluya los créditos correspondientes mencionando a @mugimew como artista.</p>
+        </div>
+      </div>
+      
+      <!-- Ítem 3 -->
+      <div class="feature-item" style="padding: 1rem 0; border-bottom: 1px solid var(--separator-color);">
+        <i class="fas fa-paint-brush" style="font-size: 1.2rem; margin-right: 1rem;"></i>
+        <div>
+          <h3 style="margin: 0 0 0.5rem 0; color: var(--dark-pink); font-size: 1.1rem;">Derechos del Artista</h3>
+          <p style="margin: 0; line-height: 1.6;">Mugi conserva los derechos de autor de cada trabajo y podrá publicarlo en sus redes sociales y portafolio, indicando que fue una comisión para un cliente (salvo que se acuerde lo contrario). Sin embargo, Mugi no podrá revender la obra.</p>
+        </div>
+      </div>
+      
+      <!-- Ítem 4 (sin borde inferior) -->
+      <div class="feature-item" style="padding: 1rem 0;">
+        <i class="fas fa-signature" style="font-size: 1.2rem; margin-right: 1rem;"></i>
+        <div>
+          <h3 style="margin: 0 0 0.5rem 0; color: var(--dark-pink); font-size: 1.1rem;">Firma del Artista</h3>
+          <p style="margin: 0; line-height: 1.6;">Toda comisión llevará la firma de Mugi sin excepción. No se permite la eliminación o alteración de la firma bajo ninguna circunstancia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-section terms-notice">
+    <h4><i class="fas fa-check-double"></i> Al solicitar un trabajo, usted acepta estos Términos de Servicio.</h4>
+  </div>
+</div>
+
+<!--------------------------- SECCION TERMINOS Y CONDICIONES FIN ---------------------------!>
+
+<!--------------------------- SECCION SOBRE MI START ---------------------------!>
+
+        <div id="about" class="tab-content">
+          <div class="info-section">
+            <h2><i class="fas fa-user"></i> Sobre Mí</h2>
+            <p>asd</p>
+          </div>
+        </div>
+
+<!--------------------------- SECCION SOBRE MI FIN ---------------------------!>
+
+<!--------------------------- PIE DE PAGINA START ---------------------------!>
+
+        <!-- Elementos que deben mostrarse siempre -->
+        <div class="social-links">
+          <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" title="DeviantArt"><i class="fab fa-deviantart"></i></a>
+          <a href="#" class="social-link" title="Pixiv"><i class="fas fa-paint-brush"></i></a>
+          <a href="#" class="social-link" title="Twitch"><i class="fab fa-twitch"></i></a>
+          <a href="#" class="social-link" title="Ko-fi"><i class="fas fa-coffee"></i></a>
+        </div>
+        
+        <div class="footer">
+          <a href="https://ko-fi.com/" target="_blank"><i class="fas fa-heart"></i> <span class="ko-fi-text">Apoyame en Ko-fi</span></a>
+        </div>
+      </main>
+    </div>
+  </div>
+  
+  <!--------------------------- PIE DE PAGINA FIN ---------------------------!>
+  
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  
+<div class="modal" id="imageModal">
+  <div class="modal-background"></div>
+  <div class="modal-container">
+    <span class="close-modal">&times;</span>
+    <img id="modalImage" src="" alt="">
+  </div>
+</div>
+    
+<script>
+/////////////////////////// MODAL FUNCIONAL (VERSIÓN ESTABLE) ///////////////////////////
+
+// Abrir modal
+function initModalListeners() {
+  document.querySelectorAll('.gallery-item img').forEach(img => {
+    img.addEventListener('click', function() {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      
+      // Cargar la imagen primero para conocer sus dimensiones
+      const tempImg = new Image();
+      tempImg.src = this.src;
+      tempImg.onload = function() {
+        modalImg.src = this.src;
+        modal.classList.add('active');
+        
+        // Ajustar tamaño basado en la relación de aspecto
+        const windowRatio = window.innerWidth / window.innerHeight;
+        const imgRatio = tempImg.width / tempImg.height;
+        
+        if (imgRatio > windowRatio) {
+          modalImg.style.maxWidth = '85vw';
+          modalImg.style.maxHeight = 'none';
+        } else {
+          modalImg.style.maxHeight = '85vh';
+          modalImg.style.maxWidth = 'none';
+        }
+      };
+    });
+  });
+}
+
+document.querySelector('.close-modal').addEventListener('click', closeModal);
+document.querySelector('.modal-background').addEventListener('click', closeModal);
+
+// Cerrar con tecla ESC
+document.addEventListener('keydown', function(e) {
+  if (e.key === "Escape") {
+    closeModal();
+  }
+});
+
+function closeModal() {
+  const modal = document.getElementById('imageModal');
+  
+  // Aplicar clase de cierre
+  modal.classList.add('closing');
+
+  // Esperar animación antes de ocultar
+  setTimeout(() => {
+    modal.classList.remove('active', 'closing');
+  }, 400); // mismo tiempo que la animación CSS
+}
+
+/////////////////////////// Modal Mejorado v2 FIN ///////////////////////////
+
+/////////////////////////// Filtros de Galería START ///////////////////////////
+
+// Función para filtrar las imágenes
+function filterGallery(category) {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    galleryItems.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+            item.style.display = 'block'; // Mostrar
+        } else {
+            item.style.display = 'none'; // Ocultar
+        }
+    });
+}
+
+// Event listeners para los botones de filtro
+function initFilterListeners() {
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        // Quitar clase 'active' de todos los botones
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        
+        // Añadir clase 'active' al botón clickeado
+        this.classList.add('active');
+        
+        // Filtrar galería
+        filterGallery(this.dataset.filter);
+    });
+  });
+}
+
+/////////////////////////// Filtros de Galería FIN ///////////////////////////
+
+/////////////////////////// Traductor START ///////////////////////////
+
+// ===== Idioma =====
+let currentLanguage = 'es';
+      
+const translations = {
+    es: {
+        portfolio: "Portfolio",
+        comissions: "Comisiones",
+        faq: "FAQs",
+        tos: "Términos",
+        about: "Sobre Mí",
+        koFi: "Apoyame en Ko-fi",
+        themeDark: "Modo oscuro",
+        themeLight: "Modo claro",
+        language: "Idioma: ES",
+        all: "Todo",
+        chibi: "Chibi",
+        halfbody: "Half Body",
+        fullbody: "Full Body",
+        fanart: "Fanart",
+        oc: "OC"
+    },
+    en: {
+        portfolio: "Portfolio",
+        comissions: "Commissions",
+        faq: "FAQs",
+        tos: "Terms",
+        about: "About Me",
+        koFi: "Support me on Ko-fi",
+        themeDark: "Dark mode",
+        themeLight: "Light mode",
+        language: "Language: EN",
+        all: "All",
+        chibi: "Chibi",
+        halfbody: "Half Body",
+        fullbody: "Full Body",
+        fanart: "Fanart",
+        oc: "OC"
+    }
+};
+
+function initLanguageToggle() {
+  const languageToggle = document.getElementById('language-toggle');
+  const languageText = languageToggle.querySelector('.language-text');
+  
+  languageToggle.addEventListener('click', function() {
+    const currentTab = getActiveTabFromURL();
+    const currentLang = currentLanguage === 'es' ? 'en' : 'es';
+    
+    // Determinar la página de destino
+    const targetPage = currentLang === 'en' ? 'index-en.html' : 'index-es.html';
+    
+    // Redirigir manteniendo el tab actual
+    window.location.href = `${targetPage}?tab=${currentTab}`;
+  });
+}
+
+/////////////////////////// Traductor FIN  ///////////////////////////
+
+/////////////////////////// Dark Mode START ///////////////////////////
+
+// Función para actualizar el tema visual
+function updateTheme() {
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    const themeIcon = document.querySelector('#theme-toggle i');
+    const themeText = document.querySelector('#theme-toggle .theme-text');
+    const bannerImg = document.querySelector('.banner');
+    
+    // Actualizar icono y texto
+    if (isDarkMode) {
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+        themeText.textContent = translations[currentLanguage].themeLight;
+    } else {
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
+        themeText.textContent = translations[currentLanguage].themeDark;
+    }
+    
+    // Actualizar banner
+    bannerImg.src = isDarkMode 
+        ? bannerImg.dataset.darkSrc 
+        : bannerImg.dataset.lightSrc;
+    
+    // Actualizar partículas del banner
+    initParticles();
+}
+
+function initThemeToggle() {
+  const themeToggle = document.getElementById('theme-toggle');
+  
+  // Event listener para el botón de tema
+  themeToggle.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    updateTheme();
+    
+    // Opcional: Guardar preferencia en localStorage
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+  });
+  
+// Cargar preferencia guardada (opcional)
+const savedDarkMode = localStorage.getItem('darkMode');
+if (savedDarkMode === 'true') {
+  document.body.classList.add('dark-mode');
+} else if (savedDarkMode === null) {
+  // Si no hay preferencia guardada, usar modo claro por defecto
+  localStorage.setItem('darkMode', 'false');
+}
+  
+  updateTheme();
+}
+
+/////////////////////////// Dark Mode FIN  ///////////////////////////
+
+/////////////////////////// Sistema de Pestañas Corregido START ///////////////////////////
+
+// Función para obtener el tab activo desde la URL
+function getActiveTabFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tab = urlParams.get('tab');
+    return tab || 'portfolio'; // Por defecto portfolio
+}
+
+// Función para actualizar la URL cuando cambia el tab
+function updateURL(tabName) {
+    const url = new URL(window.location);
+    url.searchParams.set('tab', tabName);
+    window.history.pushState({}, '', url);
+}
+
+// Función para cargar imágenes si es necesario
+function checkAndLoadPortfolio() {
+    if (document.getElementById('portfolio-content').classList.contains('active') && 
+        document.getElementById('gallery-container').children.length === 0) {
+        loadAllImages();
+    }
+}
+
+// Función para activar un tab específico
+function activateTab(tabName) {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    
+    // Remover active de todos los botones y contenidos
+    tabBtns.forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    
+    // Activar el botón correspondiente
+    const targetBtn = document.querySelector(`[data-tab="${tabName}"]`);
+    if (targetBtn) {
+        targetBtn.classList.add('active');
+    }
+    
+    // Mostrar el contenido correspondiente
+    const contentId = tabName === 'portfolio' ? 'portfolio-content' : tabName;
+    const targetContent = document.getElementById(contentId);
+    if (targetContent) {
+        targetContent.classList.add('active');
+    }
+    
+    // Cargar imágenes si es portfolio
+    if (tabName === 'portfolio') {
+        checkAndLoadPortfolio();
+    }
+    
+    // Actualizar URL
+    updateURL(tabName);
+}
+
+function initTabSystem() {
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  
+  // Event listeners para los botones de tab
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+        const tabName = this.dataset.tab;
+        activateTab(tabName);
+    });
+  });
+  
+  // Manejar el botón "atrás" del navegador
+  window.addEventListener('popstate', function() {
+    const activeTab = getActiveTabFromURL();
+    activateTab(activeTab);
+  });
+}
+
+/////////////////////////// Sistema de Pestañas Corregido FIN ///////////////////////////
+
+async function loadAllImages() {
+    const galleryContainer = document.getElementById('gallery-container');
+    const categories = ['halfbody', 'fullbody', 'chibi', 'oc'];
+    const extensions = ['.jpg', '.jpeg', '.png', '.webp'];
+
+    function imageExists(url) {
+        return new Promise((resolve) => {
+            const img = new Image();
+            img.onload = () => resolve({ exists: true, url });
+            img.onerror = () => resolve({ exists: false, url });
+            img.src = url;
+        });
+    }
+
+    async function loadCategoryImages(category) {
+        const promises = [];
+
+        for (let number = 1; number <= 10; number++) {
+            const paddedNumber = number.toString().padStart(2, '0');
+
+            for (const ext of extensions) {
+                const imgPath = `images/${category}${paddedNumber}${ext}`;
+                promises.push(
+                    imageExists(imgPath).then(result => ({
+                        ...result,
+                        category,
+                        alt: `${category} imagen ${paddedNumber}`,
+                        index: number
+                    }))
+                );
+            }
+        }
+
+        const results = await Promise.all(promises);
+
+        const imagesByNumber = {};
+
+        for (const result of results) {
+            if (result.exists && !imagesByNumber[result.index]) {
+                imagesByNumber[result.index] = {
+                    path: result.url,
+                    category: result.category,
+                    alt: result.alt
+                };
+            }
+        }
+
+        return Object.values(imagesByNumber);
+    }
+
+    function displayImages(images) {
+        galleryContainer.innerHTML = '';
+        images.forEach(imgData => {
+            const item = document.createElement('div');
+            item.className = `gallery-item ${imgData.category}`;
+
+            const imgElement = document.createElement('img');
+            imgElement.src = imgData.path;
+            imgElement.alt = imgData.alt;
+            imgElement.loading = 'lazy';
+
+            imgElement.addEventListener('click', function () {
+                document.getElementById('modalImage').src = this.src;
+                document.getElementById('imageModal').classList.add('active');
+            });
+
+            item.appendChild(imgElement);
+            galleryContainer.appendChild(item);
+        });
+
+        // Si tenés un modal configurado, reinicializalo
+        if (typeof initModalListeners === 'function') {
+            initModalListeners();
+        }
+    }
+
+    try {
+        const allCategoryPromises = categories.map(loadCategoryImages);
+        const allCategoryResults = await Promise.all(allCategoryPromises);
+        const allImages = allCategoryResults.flat();
+        displayImages(allImages);
+    } catch (e) {
+        console.error('Error al cargar imágenes:', e);
+    }
+}
+
+// Si querés que cargue automáticamente al iniciar
+document.addEventListener('DOMContentLoaded', loadAllImages);
+
+/////////////////////////// PARTICULAS PARA EL BANNER START  ///////////////////////////
+
+// Generador de partículas mejorado
+function initParticles() {
+  const banner = document.querySelector('.banner-container');
+  
+  // Limpia partículas existentes
+  document.querySelectorAll('.banner-container .particle').forEach(p => p.remove());
+  
+  // Esperamos a que el layout se estabilice
+  requestAnimationFrame(() => {
+    createParticles();
+  });
+}
+
+function createParticles() {
+  const banner = document.querySelector('.banner-container');
+  const bannerRect = banner.getBoundingClientRect();
+  const bannerWidth = bannerRect.width;
+  const bannerHeight = bannerRect.height;
+  
+  // Colores pastel
+  const colors = [
+    'var(--pastel-pink)',
+    'var(--pastel-purple)',
+    'var(--pastel-blue)',
+    'var(--pastel-green)',
+    'var(--pastel-yellow)',
+    'var(--dark-pink)'
+  ];
+  
+  // Creamos 120 partículas para mejor distribución
+  for (let i = 0; i < 120; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    
+    // Tamaño aleatorio entre 1px y 5px
+    const size = Math.random() * 6 + 2;
+    particle.style.width = `${size}px`;
+    particle.style.height = `${size}px`;
+    
+    // Color aleatorio
+    particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+    
+    // Posición aleatoria en todo el banner (usando porcentajes para mejor adaptación)
+    particle.style.left = `${Math.random() * 100}%`;
+    particle.style.top = `${Math.random() * 100}%`;
+    
+    // Animación única para cada partícula
+    const duration = 6 + Math.random() * 6;
+    const delay = Math.random() * 5;
+    particle.style.animation = `float ${duration}s ${delay}s infinite ease-in-out`;
+    
+    banner.appendChild(particle);
+  }
+}
+
+/////////////////////////// PARTICULAS PARA EL BANNER FIN  ///////////////////////////
+
+///////////////////// SCRIPT PARA FAQs START ///////////////////// 
+
+function initFAQListeners() {
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const faqItem = question.parentElement;
+      faqItem.classList.toggle('active');
+      
+      // Cierra los demás items si se abre uno nuevo
+      if (faqItem.classList.contains('active')) {
+        document.querySelectorAll('.faq-item').forEach(item => {
+          if (item !== faqItem) {
+            item.classList.remove('active');
+          }
+        });
+      }
+    });
+  });
+}
+
+///////////////////// SCRIPT PARA FAQs FIN ///////////////////// 
+
+/////////////////////////// INICIALIZACION PRINCIPAL ///////////////////////////
+
+// Inicializar todo cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', function() {
+  // Inicializar el sistema de pestañas
+  initTabSystem();
+  
+  // Inicializar el tema
+  initThemeToggle();
+  
+  // Inicializar el cambio de idioma
+  initLanguageToggle();
+  
+  // Inicializar filtros
+  initFilterListeners();
+  
+  // Inicializar FAQs
+  initFAQListeners();
+  
+  // Inicializar partículas del banner
+  const bannerObserver = new ResizeObserver(entries => {
+    for (let entry of entries) {
+      if (entry.contentRect) {
+        initParticles();
+      }
+    }
+  });
+  
+  const banner = document.querySelector('.banner-container');
+  if (banner) {
+    bannerObserver.observe(banner);
+    initParticles();
+  }
+  
+  // Activar el tab inicial desde la URL
+  const activeTab = getActiveTabFromURL();
+  activateTab(activeTab);
+});
+
+</script>
+</body>
+</html>
