@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detectando idioma...</title>
+  <script>
+    // Detecta idioma del navegador y redirige
+    (function() {
+      const lang = navigator.language || navigator.userLanguage || 'en';
+      if(lang.startsWith('es')){
+        window.location.href = 'index-es.html';
+      } else {
+        window.location.href = 'index-en.html';
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirigiendo según tu idioma...</p>
+  <p><a href="es/index.html">Español</a></p>
+  <p><a href="en/index.html">English</a></p>
+</body>
+</html>
